@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyFriendlyChatApp());
-const String _name = "Your Name";
+const String _name = "Masum";
 
 class MyFriendlyChatApp extends StatelessWidget {
   @override
@@ -79,11 +79,9 @@ class ChatScreenState extends State<ChatScreen> {
 
   void _handleSubmitted(String text) {
     _textController.clear();
-
     ChatMessage chatMessage = new ChatMessage(
       text: text,
     );
-
     setState(() {
       _message.insert(0, chatMessage);
     });
